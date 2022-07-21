@@ -1,0 +1,29 @@
+ body{
+                background:linear-gradient(gray,teal);
+                color: white;
+                padding: 2%;
+                margin:auto;
+            }     
+
+
+img{
+        	width: 400px; height: 300px;
+        }
+
+#footer{
+	width: 100%;
+	height: 40px;
+	float: left;
+	background-color:teal;
+	text-align: center;
+	color: white;
+	}
+
+#side-menu{
+	width: 30%;
+	height: 100%;
+	overflow: auto;
+	float: left;
+	background-color: linear-gradient(gray, teal);
+	font-family: stencil;
+}

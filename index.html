@@ -1,0 +1,101 @@
+<html>
+ <head>
+ <link rel="stylesheet" type="text/css" href="home.css">
+ <title>JASA PENGIRIMAN BARANG</title>
+ 
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ </head>
+<body>
+
+<div align="center"><strong><font size="7" face="stencil">JASA KIRIM BARANG </font>
+ </strong></div>
+
+<div id="side-menu"><br><br><br><br><h3>&emsp;LINKS</h3>
+			<hr color="grey">
+			<br>
+			<strong><a href="tampilan.html"> &emsp;:: HOME ::</a></strong><br><br>
+			<strong><a href="lihat.php"> &emsp;:: DAFTAR PENGIRIMAN ::</a></strong><br><br>
+		</div>
+
+
+ <div class="center">
+ 	<img src="pgr.png" style="display: block; margin: auto;"></div>
+ 	<form name="form1" method="post" action="proses.php">
+	<table width="58%" border="0" align="center">
+	<tr>
+	<td>Tanggal</td>
+	<td><input type="date" id="tanggal" name="tanggal"></td>
+	</tr>
+
+	<tr>
+	<td>Nama</td>
+	<td><input name="nama" type="text" id="nama" placeholder="nama lengkap"></td>
+	</tr>
+
+	<tr>
+	<td>Kota</td>
+	<td><select name="Pengiriman" id="Pengiriman">
+	<option>Yogyakarta</option>
+	<option>Bali</option>
+	<option>Semarang</option>
+	<option>Jakarta</option>
+	</select></td>
+	</tr>
+
+	<tr>
+	 <td>Jarak</td>	  
+	 <td><input type="text" name="jarak" size="6" id="jarak"></td>
+	 <td><input type="button" onclick="kali()" value="X"></td>
+	 <td>Biaya Kirim</td>
+	 <td><input type="text" name="ongkos" placeholder="Rp.5000" size="6" id="ongkos"></td>
+	 <td>Total</td>
+	 <td><input type="text" name="hasil" size="10" id="hasil" value=""></td>
+	 </tr>
+
+<script>
+
+        function cek(){
+        if (form1.jarak.value == "" || form1.ongkos.value == "") {
+        alert("Angka Kosong");
+        exit
+        }
+            }
+
+        function kali(){
+        cek();
+        bil1 = parseInt(form1.jarak.value);
+        bil2 = parseInt(form1.ongkos.value);
+        form1.hasil.value = bil1*bil2;
+        }
+
+        </script>
+
+
+	<tr>
+	<td>Nomer Telepon</td>
+	<td><input name="Nomer" type="text" id="Nomer"></td> </tr>
+	</tr>
+
+	<tr>
+	<td>Alamat Lengkap</td>
+	<td><textarea name="Alamat" id="Alamat"></textarea></td> </textarea>
+	</tr>
+
+	<tr>
+	<td>&nbsp;</td>
+	<td><input type="submit" name="Submit" value="Kirim"><input type="reset"name="Submit2" value="Batal"></td>
+	</tr>
+	</table>
+	</form>
+
+	    <br>
+	    <div class="footer">
+            <footer>
+            <ul>
+                <li>Copyright <a href="https://instagram.com/istrul__?igshid=YmMyMTA2M2Y=">@Nurul Istiqamah(2100018278)</a> All rights reserved</li>
+            </ul>
+            </footer>
+        </div>
+
+	</body>
+	</html>
